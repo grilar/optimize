@@ -1,0 +1,24 @@
+{
+    "name": "grilar/optimize",
+    "description": "Optimize page speed package",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\Optimize\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\Optimize\\Providers\\OptimizeServiceProvider"
+            ],
+            "aliases": {
+                "OptimizerHelper": "Grilar\\Optimize\\Facades\\OptimizerHelper"
+            }
+        }
+    }
+}
